@@ -1,0 +1,102 @@
+.unifrakturmaguntia-regular {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "UnifrakturMaguntia";
+  background-image: url("https://wallpapercave.com/wp/wp11848317.jpg");
+  background-size: cover;
+  margin: 2rem;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  color: white;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  background-color: black;
+  border: white 8px solid;
+  border-style: ridge;
+  padding: 2rem;
+  width: min-content;
+}
+
+input {
+  font-family: Helvetica, sans-serif;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-family: "UnifrakturMaguntia";
+}
+
+#txt {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  background-color: black;
+  color: white;
+}
+
+#serverUrl {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  background-color: black;
+  color: white;
+}
+
+#btn {
+  background-color: black;
+  outline: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+}
+
+#btn:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.1s;
+}
+
+.skin-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 64px);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.skin-canvas {
+  width: 64px;
+  height: 64px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  image-rendering: pixelated;
+}
+
+.skin-canvas:hover {
+  border-color: #aaa;
+}
+
+.skin-canvas.selected {
+  border-color: red;
+}
